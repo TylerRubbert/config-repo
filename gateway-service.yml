@@ -11,7 +11,7 @@ eureka:
 zuul:
   routes:
     flash-card-service:
-      path: /flash-cards/*
+      path: /flash-cards/**
       strip-prefix: true
       serviceId: flash-card-service
     user-service:
